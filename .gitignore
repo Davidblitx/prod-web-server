@@ -1,0 +1,14 @@
+# Never push these
+*.pem
+*.key
+.env
+__pycache__/
+*.pyc
+.DS_Store
+
+# Python
+*.egg-info/
+dist/
+
+# Logs (too large, not useful on GitHub)
+*.log
