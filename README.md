@@ -190,6 +190,6 @@ bash scripts/bootstrap.sh
 
 ## Key Learnings
 
-Building this taught me the difference between *running* a server and *operating* one. Getting Nginx to serve a Flask app takes 20 minutes. Building something that survives crashes, bad deployments, and brute force attacks — and recovers itself — takes genuine systems thinking.
+Building this taught me the difference between *running* a server and *operating* one. Getting Nginx to serve a Flask app takes 20 minutes. Building something that survives crashes, bad deployments, and brute force attacks, and recovers itself, takes genuine systems thinking.
 
 The most valuable part wasn't the implementation. It was asking "what breaks this?" for every component and building a response to each answer.
