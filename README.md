@@ -1,7 +1,8 @@
 # 🚀 Production-Grade Web Server on AWS
 
-> A hardened, self-healing web infrastructure on AWS EC2 — built the way real production systems are built.
-
+> A hardened, production-ready single-server infrastructure deployed on AWS EC2 using Docker, Nginx, Flask, and automated self-healing scripts, designed to simulate real-world DevOps and cloud engineering practices.
+> This project demonstrates how to build, secure, deploy, monitor, and recover a production web server using industry-standard tooling and operational practices.
+> 
 ![AWS](https://img.shields.io/badge/AWS-EC2-orange?logo=amazonaws)
 ![Docker](https://img.shields.io/badge/Docker-containerized-blue?logo=docker)
 ![Nginx](https://img.shields.io/badge/Nginx-reverse--proxy-green?logo=nginx)
@@ -12,7 +13,7 @@
 
 ## What This Is
 
-Most tutorials show you how to get a server running. This project shows what happens **after** — security hardening, automated recovery, zero-downtime deployments, and surviving real internet traffic.
+Most tutorials show you how to set up a server. This project shows what happens **after** — security hardening, automated recovery, zero-downtime deployments, and surviving real internet traffic.
 
 This is a single-server infrastructure that demonstrates:
 - **Defense in depth** — two independent firewall layers
