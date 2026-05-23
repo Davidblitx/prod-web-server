@@ -23,41 +23,7 @@ This is a single-server infrastructure that demonstrates:
 ---
 
 ## Architecture
-
-```
-Internet Traffic
-      │
-      ▼
-┌─────────────────────────────────────────────┐
-│  AWS Security Group                          │
-│  (Cloud-level firewall — ports 22, 80 only) │
-└──────────────────┬──────────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────────┐
-│  UFW Firewall (OS-level)                    │
-│  Second layer — independent of AWS          │
-└──────────────────┬──────────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────────┐
-│  Nginx :80                                  │
-│  • Reverse proxy                            │
-│  • Security headers                         │
-│  • Rate limiting (10 req/s per IP)          │
-│  • Version tokens hidden                    │
-└──────────────────┬──────────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────────┐
-│  Docker Container                           │
-│  Flask + Gunicorn :5000                     │
-│  • Non-root user                            │
-│  • Isolated filesystem                      │
-│  • Auto-restart on crash                   │
-└─────────────────────────────────────────────┘
-```
-
+![Architecture Diagram](docs/images/architecture.png)
 ---
 
 ## Security Implementation
