@@ -1,4 +1,4 @@
-# 🚀 Production-Grade Web Server on AWS
+# 🚀 Production-Grade Flask Infrastructure on AWS
 
 > A hardened, production-ready single-server infrastructure deployed on AWS EC2 using Docker, Nginx, Flask, and automated self-healing scripts, designed to simulate real-world DevOps and cloud engineering practices.
 > This project demonstrates how to build, secure, deploy, monitor, and recover a production web server using industry-standard tooling and operational practices.
